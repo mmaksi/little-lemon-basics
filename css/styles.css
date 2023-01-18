@@ -1,3 +1,8 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #edefee;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -122,4 +127,25 @@ footer {
 
 .copyright > p {
   margin: 5px;
+}
+
+/* Return to top */
+#return-to-top {
+  position: fixed; /* fix the link in a fixed position */
+  bottom: 20px; /* distance from the bottom */
+  right: 20px; /* distance from the right */
+  display: none; /* hide the link by default */
+}
+
+#return-to-top::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #495e57;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
 }
